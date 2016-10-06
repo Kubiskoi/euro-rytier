@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Euro Rytier",
+  "description": "This extension will convert CZK to EUR on cernyrytir.cz",
+  "version": "1.0",
+
+  //set up instalation icon
+  "icons":{
+    "128":"icon128.png"
+  },
+  
+  "browser_action": {
+    //set up icon next to  chrome Omnibox
+   "default_icon":"icon19.png"
+   //html popped on icon click
+   // "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+  "http://www.cernyrytir.cz/*"
+  ]
+}
